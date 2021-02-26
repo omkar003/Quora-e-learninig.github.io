@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 !important;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 93, 0, 0.26))), url("../images/123.jpg");
+  background-image: linear-gradient(rgba(253, 93, 0, 0.26)), url("../images/123.jpg");
+  background-position: center;
+}
+
+header .box {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  border-radius: 20px;
+  background: #ffffffd5;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+header .box a {
+  margin-left: 30px;
+}
+
+header .box .remember {
+  padding-top: 20px;
+}
+
+header .box .social {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+header .box .social img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(2px 10px 20px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(2px 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.box h1 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.box input[type="text"], .box input[type="password"] {
+  margin-top: 20px;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ff3c00;
+  padding: 14px 10px;
+  width: 250px;
+  outline: none;
+  color: #181818;
+  border-radius: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+  width: 300px;
+  border-color: #ff0095;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.box input[type="checkbox"] {
+  margin-right: 20px;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ff00aa;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 10px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background: #ff019e;
+  color: white;
+}
+/*# sourceMappingURL=sign-in.css.map */
