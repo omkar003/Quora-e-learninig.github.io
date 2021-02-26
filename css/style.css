@@ -348,6 +348,7 @@ header .hero-img img {
 }
 
 .brands ul img {
+  cursor:pointer;
   width: 160px;
   height: auto;
 }
