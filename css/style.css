@@ -151,7 +151,7 @@ nav .user {
 nav .user i {
   padding: 5px;
   margin: 5px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 header {
@@ -1931,6 +1931,9 @@ footer .section-2 a img {
     width: 90vw;
     height: auto;
     padding-left: 10px;
+  }
+  .main-content{
+    margin:20px 0;
   }
   main {
     width: 100vw;
