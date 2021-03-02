@@ -31,19 +31,29 @@ header {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 46, 253, 0.26))), url("../images/login-bg.jpg");
-  background-image: linear-gradient(rgba(0, 46, 253, 0.26)), url("../images/login-bg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 46, 253, 0.26))), url("../images/123456.jpg");
+  background-image: linear-gradient(rgba(0, 46, 253, 0.26)), url("../images/123456.jpg");
   background-position: center;
 }
 
 header .box {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  width: 350px;
-  padding: 40px;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  padding: 2%;
+  margin: 2%;
   position: absolute;
   border-radius: 20px;
   background: #ffffffd5;
@@ -81,28 +91,37 @@ header .box .social img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 30px;
   cursor: pointer;
   -webkit-filter: drop-shadow(2px 10px 20px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(2px 10px 20px rgba(0, 0, 0, 0.2));
 }
 
-.box h1 {
+header .box h1 {
   color: black;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.box input[type="text"], .box input[type="password"] {
+header .box input[type="text"], header .box input[type="password"] {
+  position: relative;
   margin-top: 20px;
   border: 0;
   background: none;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px auto;
   text-align: center;
   border: 1px solid #002fff;
   padding: 14px 10px;
-  width: 250px;
+  width: 60%;
   outline: none;
   color: #181818;
   border-radius: 10px;
@@ -114,18 +133,23 @@ header .box .social img {
   font-weight: 500;
 }
 
-.box input[type="text"]:focus, .box input[type="password"]:focus {
+header .box input[type="text"], header .box input[type="password"]:focus {
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .box input[type="text"]:focus, header .box input[type="password"]:focus {
   width: 300px;
   border-color: #00e1ff;
   -webkit-transition: .3s linear;
   transition: .3s linear;
 }
 
-.box input[type="checkbox"] {
+header .box input[type="checkbox"] {
   margin-right: 20px;
 }
 
-.box input[type="submit"] {
+header .box input[type="submit"] {
   border: 0;
   font-size: 1rem;
   font-weight: 500;
@@ -143,8 +167,33 @@ header .box .social img {
   cursor: pointer;
 }
 
-.box input[type="submit"]:hover {
+header .box input[type="submit"]:hover {
   background: #3201b9;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header .box {
+    width: 450px;
+    padding: 3%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .box {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header .box {
+    width: 280px;
+  }
 }
 /*# sourceMappingURL=login.css.map */

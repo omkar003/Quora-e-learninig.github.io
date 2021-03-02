@@ -24,25 +24,25 @@ body{
       align-items: center;
       width: 100vw;
       height: 100vh;
-      background-image: linear-gradient(rgba(0, 46, 253, 0.26)), url("../images/login-bg.jpg");
-	background-position: center;
+      background-image: linear-gradient(rgba(0, 46, 253, 0.26)), url("../images/123456.jpg");
+      background-position: center;
     .box{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        width: 350px;
-        padding: 40px;
+      min-height: 60vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        width: 450px;
+        padding: 2%;
+        margin: 2%;
         position: absolute;
         border-radius: 20px;
-   
         background: #ffffffd5;
         box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
         a{
             margin-left: 30px;
         }
         .remember{
-
             padding-top: 20px;
         }
         .social{
@@ -56,67 +56,100 @@ body{
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                margin-right: 20px;
+                margin-right: 30px;
                 cursor: pointer;
                 filter: drop-shadow(2px 10px 20px rgba(0,0,0,0.2));
             }
         }
       }
+      .box h1{
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-weight: 600;
+        
+      }
+      .box input[type = "text"],.box input[type = "password"]{
+        position: relative;
+          margin-top: 20px;
+        border:0;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid #002fff;
+        padding: 14px 10px;
+        width: 60%;
+        outline: none;
+        color: rgb(24, 24, 24);
+        border-radius: 10px;
+        transition: 0.25s;
+        transition: .3s linear;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .box input[type = "text"],.box input[type = "password"]:focus{
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+      }
+      .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+        width: 300px;
+        border-color: #00e1ff;
+        transition: .3s linear;
+        
+      }
+      .box input[type = "checkbox"]{
+          margin-right: 20px;
+      }
+      .box input[type = "submit"]{
+        border:0;
+        font-size: 1rem;
+        font-weight: 500;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid #0eccd3;
+        padding: 14px 40px;
+        outline: none;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        transition: .3s linear;
+        cursor: pointer;
+      }
+      .box input[type = "submit"]:hover{
+        background: #3201b9;
+        color: white;
+      }
 
-
   }
 
-  .box h1{
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    font-weight: 600;
-    
+  @media screen and (max-width:768px){
+    header{
+      .box{
+        width: 450px;
+        padding: 3%;
+      }
+    }
   }
-  .box input[type = "text"],.box input[type = "password"]{
-      margin-top: 20px;
-    border:0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 1px solid #002fff;
-    padding: 14px 10px;
-    width: 250px;
-    outline: none;
-    color: rgb(24, 24, 24);
-    border-radius: 10px;
-    transition: 0.25s;
-    transition: .3s linear;
-    font-size: 1rem;
-    font-weight: 500;
+  @media screen and (max-width:600px){
+    header{
+      .box{
+        width: 400px;
+      }
+    }
   }
-  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
-    width: 300px;
-    border-color: #00e1ff;
-    transition: .3s linear;
-    
+  @media screen and (max-width:450px){
+    header{
+      .box{
+        width: 330px;
+      }
+    }
   }
-  .box input[type = "checkbox"]{
-      margin-right: 20px;
+  @media screen and (max-width:360px){
+    header{
+      .box{
+        width: 280px;
+      }
+    }
   }
-  .box input[type = "submit"]{
-    border:0;
-    font-size: 1rem;
-    font-weight: 500;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 1px solid #0eccd3;
-    padding: 14px 40px;
-    outline: none;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    transition: .3s linear;
-    cursor: pointer;
-  }
-  .box input[type = "submit"]:hover{
-    background: #3201b9;
-    color: white;
-  }
-  
