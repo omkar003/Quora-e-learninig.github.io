@@ -22,7 +22,7 @@
   background: #2e00ad;
 }
 
-* {
+*,::before,::after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -webkit-box-pack: center;
@@ -353,6 +353,7 @@ header .hero-img img {
 }
 
 .brands ul img {
+  cursor:pointer;
   width: 160px;
   height: auto;
   -webkit-filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.1));
